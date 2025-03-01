@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variable Project</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="something.css" />
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="console.log('Cart Quantity: ', quantity)">
+      Show Quantity
+    </button>
+    <button onclick="console.log('Cart Quantity: ', quantity=quantity+1)">
+      Add to cart
+    </button>
+    <button onclick="console.log('Cart Quantity: ', quantity=quantity+2)">
+      +2
+    </button>
+    <button onclick="console.log('Cart Quantity: ', quantity=quantity+3)">
+      +3
+    </button>
+    <button onclick="console.log('Cart Quantity: ', quantity=0)">
+      Reset Quantity
+    </button>
+    <script>
+      let quantity = 0;
+      console.log("Original Quantity", quantity);
+    </script>
+  </body>
+</html>
