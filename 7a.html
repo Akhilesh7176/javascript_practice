@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function greet(name) {
+        if (name === undefined) {
+          console.log("Hi there!");
+        }
+        console.log(`Hello! ${name}`);
+      }
+      greet();
+      function convertToFahrenheit(celsius) {
+        fahrenheit = (celsius * 9) / 5 + 32;
+        console.log(fahrenheit);
+      }
+      console.log(typeof celsius);
+      convertToFahrenheit(25);
+      function convertLength(length, from, to) {
+        if (from === "mile" && to === "km") {
+          console.log(`it is ${length * 1.6}km`);
+        } else if (from === "km" && to === "mile") {
+          console.log(`it is ${length / 1.6}miles`);
+        } else if (
+          (from === "km" && to === "km") ||
+          (from === "mile" && to === "mile")
+        ) {
+          console.log(`it is ${length}km`);
+          console.log(`it is ${length}miles`);
+        }
+      }
+      // convertLength(50, "mile", "km");
+      convertLength(80, "mile", "mile");
+    </script>
+  </body>
+</html>
